@@ -1,0 +1,21 @@
+html {
+    background-color: black;
+}
+body{
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    color: #007d7b;
+}
+nav {
+    background-color: black;
+    color: white;
+}
+main {
+    background-color: white;
+    color: black;
+}
+footer {
+    color: white;
+}
