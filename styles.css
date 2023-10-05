@@ -1,8 +1,12 @@
 html {
+    width: 1300px;
     background-color: black;
 }
 body{
-    margin: 0 auto;
+    margin:0 auto;
+    width: 1300px;
+    left:50%;
+    top:50%;
 }
 header {
     background-color: white;
@@ -16,6 +20,20 @@ main {
     background-color: white;
     color: black;
 }
+.photos{
+    width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+}
+table img{
+    width: 50%;
+}
 footer {
     color: white;
 }
+footer p, footer h2{
+    text-align: center;
+}
+input{
+    width: 650px;
+}p
