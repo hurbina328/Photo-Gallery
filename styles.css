@@ -7,6 +7,7 @@ body{
     width: 50%;
     left:50%;
     top:50%;
+    justify-content: center;
 }
 header {
     background-color: white;
@@ -15,25 +16,117 @@ header {
 nav {
     background-color: black;
     color: white;
+    padding-bottom: 10px;
 }
 main {
     background-color: white;
-    color: black;
+    color: black;  
 }
-.photos{
-    width: 1040px;
-    display: flex;
-    flex-wrap: wrap;
-}
-table img{
-    width: 50%;
-}
+
 footer {
     color: white;
 }
-footer p, footer h2{
+footer p, footer h2, footer button{
     text-align: center;
 }
 input{
     width: 650px;
-}p
+    color:#007d7b
+}
+h2{
+    padding-top: 10px;
+    text-align: center;
+}
+ul, a {
+    text-decoration: none;
+}
+li a{
+    color: white;
+    padding: 8px;
+    display: block;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+li {
+   float:right;
+}
+button{
+    background-color: #007d7b;
+    color: white;
+    width: 325px;
+    position: relative;
+    left: 175px;
+}
+.content{
+    margin: 0 auto;
+}
+.container{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+.container > * {
+    width: calc(100% / 3);
+}
+@media screen and (max-width: 1300px) {
+    .container{
+        grid-template:
+        ".first .first .first"
+        ".2nd .2nd .2nd"
+        ".3rd .3rd .3rd"
+        ".4th .4th .4th";
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .container > * {
+        width: calc(100% / 3);
+    }
+    .content{
+        justify-content: right;
+    }
+} 
+@media screen and (max-width: 880px){
+    .container{
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .container > * {
+        width: calc(100% / 2);
+    }
+    .content{
+        justify-content: center;
+    }
+    li{
+        align-content:center;
+    }
+}
+
+@media screen and (max-width:485px){
+        .container{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            width:485px;
+        }
+}

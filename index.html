@@ -4,64 +4,59 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1>TK Photography</h1>
-            <nav>
-                <ul>
-                    <li><a>About</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!--Top button-->
-            <h2>About</h2>
+        <div class="content">
+            <header>
+                <h1>TK Photography</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!--Top button-->
+                <h2>About</h2>
+                
+                <p>Hello!</p>
+                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+    
+                <h2>Gallery</h2>
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+                <div class="container">
+                            <div class="first"><img src="images/Chile.png" alt="Chile, 2001"/></div>
+                            <div class="first"><img src="images/Guatemala.png" alt="Guatemala, 1997"/></div>
+                            <div class="first"><img src="images/Hawaii.png" alt="Hawaii, 2010"/></div>
             
-            <p>Hello!</p>
-            <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
-
-            <h2>Gallery</h2>
-            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-            <div class="photos">
-                <table>
-                    <tr>
-                        <td><img src="images/Chile.png" alt="Chile, 2001"/></td>
-                        <td><img src="images/Guatemala.png" alt="Guatemala, 1997"/></td>
-                        <td><img src="images/Hawaii.png" alt="Hawaii, 2010"/></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/Iran.png" alt="Iran, 1999"/></td>
-                        <td><img src="images/Ireland.png"alt="Ireland, 2012"/></td>
-                        <td><img src="images/Italy.png"alt="Italy, 2015"/></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/Moab-Desert.png"alt="Moab Desert, 2020"/></td>
-                        <td><img src="images/Rocky-Mountains.png"alt="Rocky Mountains, 2009"/></td>
-                        <td><img src="images/Switzerland.png"alt="Switzerland, 2014"/></td>
-                    </tr>    
-                    <tr>
-                        <td><img src="images/UK.png"alt="UK, 2005"/></td>
-                        <td><img src="images/USA.png"alt="USA, 2021"/></td>
-                        <td><img src="images/Wyoming.png"alt="Wyoming, 2021"/></td>
-                    </tr>    
-                </table>
-            </div>
-            
-        </main>
-        <footer>
-            <h2>Contact</h2>
-            <form>
-                <p>Please fill out this form and I’ll connect with you soon.</p>
-                <label for="name">Name (Your full name)</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email (Enter your email address):</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="message">Message (What can I help you with?)</label><br>
-                <input  name="message" id="message" name="message"><br>
-                <button>Submit</button>
-            </form>
-            <p>Copyright 2021 TK Photography</p>
-        </footer>
+    
+                            <div class="2nd"><img src="images/Iran.png" alt="Iran, 1999"/></div>
+                            <div class="2nd"><img src="images/Ireland.png"alt="Ireland, 2012"/></div>
+                            <div class="2nd"><img src="images/Italy.png"alt="Italy, 2015"/></div>
+          
+                            <div class="3rd"><img src="images/Moab-Desert.png"alt="Moab Desert, 2020"/></div>
+                            <div class="3rd"><img src="images/Rocky-Mountains.png"alt="Rocky Mountains, 2009"/></div>
+                            <div class="3rd"><img src="images/Switzerland.png"alt="Switzerland, 2014"/></div>
+                    
+                            <div class="4th"><img src="images/UK.png"alt="UK, 2005"/></div>
+                            <div class="4th"><img src="images/USA.png"alt="USA, 2021"/></div>
+                            <div class="4th"><img src="images/Wyoming.png"alt="Wyoming, 2021"/></div>     
+                </div>              
+            </main>
+            <footer>
+                <h2>Contact</h2>
+                <form>
+                    <p>Please fill out this form and I’ll connect with you soon.</p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" value="(Your full name)"><br>
+                    <label for="email">Email :</label><br>
+                    <input type="text" id="email" name="email" value="(Enter your email address)"><br>
+                    <label for="message">Message </label><br>
+                    <input  name="message" id="message" name="message" value="(What can I help you with?)"><br>    
+                </form>
+                <button name="submit">Submit</button>
+                <p>Copyright 2021 TK Photography</p>
+            </footer>
+        </div>
     </body>
 </html>
